@@ -1,0 +1,84 @@
+
+
+.selectorSkillsContainer {
+  background-color: #282c34;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
+}
+
+.skillsList {
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillsListItem {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.infoContainer {
+  padding: 20px;
+  color: white;
+}
+
+.titleSkills{
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorSkills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  color: white;
+  padding: 40px 20px 20px 50px;
+}
+
+.interseccion{
+  padding-top: 30px;
+  content: '';
+  color: white;
+  background: white;
+  width: 1px;
+  left: 50%;
+}
+
+.child{
+  position: relative;
+  margin: 20px;
+  border-radius: 20px;
+
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  position: relative;
+  background: white;
+  border-radius: 50%;
+  transition: background-color 0.3s ease; /* Transición de color en 0.3 segundos */
+}
+
+.contentSkills {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+

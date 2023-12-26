@@ -1,0 +1,31 @@
+.textInfo{
+    font-family: 'Courier New', monospace;
+    padding: 30px 30px 30px 30px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    transition: font-size 1s ease-in-out, font-weight 1s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
+    border-radius: 5px;
+    transform-origin: center bottom; 
+}
+
+.textInfo:hover{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    transform: scale(1.01);
+    color: burlywood;
+    transition-delay: 0s;
+}
+
+.titleInfo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contenedorInfo{
+    background-color: #282c34;
+    color: white;
+    padding-bottom: 20px ;
+}

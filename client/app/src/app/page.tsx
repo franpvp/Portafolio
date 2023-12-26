@@ -6,8 +6,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // Componentes
 import Navbar from "./components/nav";
-import Info from './pages/info/info';
-import SkillsInfo from './pages/skills/skills';
+import Info from './components/info';
+import Skills from './components/skills';
+import Formacion from "./components/formacion";
+import Contacto from "./components/contacto";
+import Certificacion from "./components/certificaciones";
+import Footer from "./components/footer";
+
 
 type User = {
   id: number;
@@ -33,9 +38,18 @@ const Home = () => {
   // }, []);
 
   return (
-    <>
-      <Navbar></Navbar>
-      <Info /></>
+    
+    <div>
+      <Navbar/>
+      <Info />
+      <Skills />
+      <Formacion />
+      <Certificacion />
+      <Contacto />
+      <Footer />
+      
+    </div>
+      
   );
 };
 export default Home;

@@ -1,0 +1,30 @@
+/* TypingSimulator.module.css */
+
+.codeContainer {
+    font-family: 'Courier New', monospace;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .codeText {
+    color: #333;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #333;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
