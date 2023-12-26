@@ -64,15 +64,20 @@
 
 .content {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
-  padding: 15px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
   position: relative;
   background: white;
   border-radius: 50%;
-  transition: background-color 0.3s ease; /* Transición de color en 0.3 segundos */
+  transition: background-color 0.9s ease, transform 0.5s ease;
+}
+
+.content:hover {
+  transform: scale(1.2);
 }
 
 .contentSkills {

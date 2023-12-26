@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
     return (
@@ -11,35 +12,37 @@ const Navbar: React.FC = () => {
                     </button>
                     <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
-                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <Link href="#about" style={{ textDecoration: 'none' }}>
+                                <p className="nav-link btn btn-outline-secondary" aria-current="page">About Me</p>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <Link href="#skills" style={{ textDecoration: 'none' }}>
+                                <p className="nav-link btn btn-outline-secondary" aria-current="page">Skills</p>
+                            </Link>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                            </a>
-                            <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr className="dropdown-divider"></hr>
-                            </li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li className="nav-item">
+                            <Link href="#formacion" style={{ textDecoration: 'none' }}>
+                                <p className="nav-link btn btn-outline-secondary" aria-current="page">Formación</p>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="#certificacion" style={{ textDecoration: 'none' }}>
+                                <p className="nav-link btn btn-outline-secondary" aria-current="page">Certificaciones</p>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="#contacto" style={{ textDecoration: 'none' }}>
+                                <p className="nav-link btn btn-outline-secondary" aria-current="page">Contacto</p>
+                            </Link>
                         </li>
                         </ul>
-                        <form className="d-flex mt-3" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
                     </div>
                 </div>

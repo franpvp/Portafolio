@@ -3,7 +3,7 @@ import styles from '@/styles/contacto.module.css';
 
 const Contacto: React.FC = () => {
     return (
-        <div className={`container-fluid pt-3 ${styles.contenedorContacto}`}>
+        <div id="contacto" className={`container-fluid pt-3 ${styles.contenedorContacto}`}>
             <div className="row">
                 <h2 className='text-center p-2'>Contacto</h2>
                 <div className="col"></div>

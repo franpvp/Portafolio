@@ -6,7 +6,7 @@ import TypingSimulator from './typingSimulator';
 const Info: React.FC = () => {
     const textos = ['Hola, mi nombre es Francisca.', 'Bienvenido a mi Portafolio!'];
     return (
-      <div className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
+      <div id="about" className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
         <div className="row">
           <div className="col-lg-6 p-4 d-flex align-items-center justify-content-center">
             <div className="row">

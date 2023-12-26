@@ -2,6 +2,10 @@
     background-color: #282c34;
 }
 
+.titleFormacion{
+    color: white;
+}
+
 .timeline{
     padding-top: 30px;
     content: '';
