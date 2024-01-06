@@ -1,5 +1,4 @@
 
-
 .selectorSkillsContainer {
   background-color: #282c34;
   padding-top: 30px;
@@ -9,11 +8,11 @@
 }
 
 .skillsList {
-  list-style-type: none;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .skillsListItem {
@@ -70,7 +69,6 @@
   width: 150px;
   height: 150px;
   padding: 10px;
-  position: relative;
   background: white;
   border-radius: 50%;
   transition: background-color 0.9s ease, transform 0.5s ease;
@@ -81,9 +79,19 @@
 }
 
 .contentSkills {
-  padding: 30px;
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 30px;
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+  width: 400px;
+  color: black;
+  background: white;
+  border-radius: 20px;
 }
+
+
+
+
 

@@ -1,18 +1,20 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+import "/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css";
 
 // Componentes
 import Navbar from "./components/nav";
-import Info from './components/info';
-import Skills from './components/skills';
+import Info from "./components/info";
+import Skills from "./components/skills";
 import Formacion from "./components/formacion";
-import Contacto from "./components/contacto";
+import Proyectos from "./components/proyectos";
 import Certificacion from "./components/certificaciones";
+import Contacto from "./components/contacto";
 import Footer from "./components/footer";
-
 
 type User = {
   id: number;
@@ -20,36 +22,21 @@ type User = {
 };
 
 // Client component
-const Home = () => {
-  // const [data, setData] = useState<User[]>([]);
-
-  // useEffect(() => {
-  //   const fetchUsers = async () => {
-  //     try {
-  //       const res = await fetch("http://localhost:3000/api/v1/users");
-  //       const resData = await res.json();
-  //       setData(resData.users);
-  //       return resData;
-  //     } catch (error) {
-  //       throw error;
-  //     }
-  //   };
-  //   fetchUsers();
-  // }, []);
+const Home: React.FC = () => {
+  
 
   return (
-    
     <div>
-      <Navbar/>
+      <Navbar />
       <Info />
       <Skills />
       <Formacion />
+      <Proyectos />
       <Certificacion />
       <Contacto />
       <Footer />
-      
     </div>
-      
   );
 };
+
 export default Home;

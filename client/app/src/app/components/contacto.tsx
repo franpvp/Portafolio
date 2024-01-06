@@ -3,7 +3,7 @@ import styles from '@/styles/contacto.module.css';
 
 const Contacto: React.FC = () => {
     return (
-        <div id="contacto" className={`container-fluid pt-3 ${styles.contenedorContacto}`}>
+        <div id="contacto" className={`container-fluid pt-3 mt-3 ${styles.contenedorContacto}`}>
             <div className="row">
                 <h2 className='text-center p-2'>Contacto</h2>
                 <div className="col"></div>
@@ -18,7 +18,7 @@ const Contacto: React.FC = () => {
                             <textarea className="form-control" id="mensaje" name="mensaje" required></textarea>
                         </div>
                         <div className="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
-                            <button className="btn btn-primary" type="submit">Button</button>
+                            <button className="btn btn-primary" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
