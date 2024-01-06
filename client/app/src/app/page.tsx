@@ -15,6 +15,7 @@ import Proyectos from "./components/proyectos";
 import Certificacion from "./components/certificaciones";
 import Contacto from "./components/contacto";
 import Footer from "./components/footer";
+import Cursor from "./components/cursor";
 
 type User = {
   id: number;
@@ -23,11 +24,11 @@ type User = {
 
 // Client component
 const Home: React.FC = () => {
-  
 
   return (
     <div>
       <Navbar />
+      <Cursor />
       <Info />
       <Skills />
       <Formacion />

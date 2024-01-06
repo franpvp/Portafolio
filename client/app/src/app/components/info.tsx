@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import styles from "@/styles/info.module.css";
 
 import TypingSimulator from "./typingSimulator";
-import useMousePosition from "./useMousePosition";
 import { motion } from "framer-motion";
 
 
+import '/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css';
+
 const Info: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const { x, y } = useMousePosition();
   const size = isHovered ? 400 : 40;
 
   const textos = [
@@ -39,18 +39,9 @@ const Info: React.FC = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className={styles.main}>
+          <div>
             <h1 className={styles.titleInfo}>About me</h1>
-            <motion.div
-              className={styles.mask}
-              animate={{
-
-                WebkitMaskPosition: `${x - 5}px ${y - 5}px`,
-      
-                WebkitMaskSize: `${size}px`,
-      
-              }}
-              transition={{ type: "tween", ease: "backOut", duration:0.5}}>
+            <motion.div>
               <p>
                 ¡Hola! Mi nombre es Francisca Valdivia, me considero una persona
                 proactiva con la motivación de enfrentar nuevos desafíos y las
@@ -64,18 +55,7 @@ const Info: React.FC = () => {
                 podría estar, y adquirir los conocimientos que pueda.
               </p>
             </motion.div>
-            <p>
-              ¡Hola! Mi nombre es Francisca Valdivia, me considero una persona
-              proactiva con la motivación de enfrentar nuevos desafíos y las
-              ganas de aprender y obtener experiencia, me apasiona la tecnología
-              y cómo esta transforma nuestro mundo, mi enfoque está centrado en
-              la búsqueda de trabajos que involucren el desarrollo Full Stack, y
-              de proyectos que tengan un efecto real, quiero participar en
-              equipos multidisciplinarios para poder entregar lo mejor de mí y
-              ser una pieza clave que pueda contribuir de la mejor manera a los
-              objetivos de cualquier empresa en la que me podría estar, y
-              adquirir los conocimientos que pueda.
-            </p>
+            
           </div>
         </div>
       </div>

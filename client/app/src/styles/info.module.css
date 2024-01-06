@@ -23,13 +23,6 @@
 .main {
     height: 100vh;
 }
- .mask {
-    color: #afa18f;
-    font-size: 32px;
-    line-height: 33px;
-    cursor: default;
-    font-weight: 10px;
-  }
   
   .mask {
     position: absolute;
@@ -38,7 +31,6 @@
     mask-repeat: no-repeat;
     mask-size: 40px;
     color: black;
-    margin-top: -14px;
   }
 
   .row{
