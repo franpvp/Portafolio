@@ -4,7 +4,7 @@
 
 .flare {
     position: fixed;
-    border: 2px solid #ffffff2b;
+    border: 5px solid #e1e1e1;
     border-radius: 50%;
     mix-blend-mode: screen;
     pointer-events: none;
@@ -27,3 +27,7 @@
     opacity: 0 !important;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
+
+.nav-link{
+  margin: 0 !important;
+}

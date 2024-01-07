@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '@/styles/contacto.module.css';
+import { color } from 'framer-motion';
 
 const Contacto: React.FC = () => {
     return (
@@ -18,7 +19,7 @@ const Contacto: React.FC = () => {
                             <textarea className="form-control" id="mensaje" name="mensaje" required></textarea>
                         </div>
                         <div className="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
-                            <button className="btn btn-primary" type="submit">Enviar</button>
+                            <button className="btn btn-primary" style={{color: 'gray'}} type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>

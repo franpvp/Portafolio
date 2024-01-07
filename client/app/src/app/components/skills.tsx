@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '@/styles/skills.module.css';
 import { useSpring, animated } from 'react-spring';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Skills = () => {
+
+  useEffect(() => {
+    AOS.init({duration:2000});
+  }, []);
 
   return (
     <div id="skills" className={`row ${styles.selectorSkillsContainer}`}>
-      <h2 className={`${styles.titleSkills}`}>Skills</h2>
+      <br />
+      <h2 className={`${styles.titleSkills} pb-5`} data-aos="fade-left">Skills</h2>
         {/* Java */}
-        <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
+        <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-down">
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}` }>
               <img
@@ -37,7 +45,7 @@ const Skills = () => {
         </div>
       
       {/* Python Django */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
+      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-down">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img
@@ -65,7 +73,7 @@ const Skills = () => {
         </div>
       </div>
       {/* SQL */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
+      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-down">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img
@@ -93,7 +101,7 @@ const Skills = () => {
           </div>
       </div>
       {/* HTML CSS */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
+      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-up">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img
@@ -121,7 +129,7 @@ const Skills = () => {
           </div>
       </div>
       {/* NextJs */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
+      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-up">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img
@@ -149,7 +157,7 @@ const Skills = () => {
           </div>
       </div>
       {/* NodeJS ExpressJS */}
-      <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}>
+      <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`} data-aos="fade-up">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img

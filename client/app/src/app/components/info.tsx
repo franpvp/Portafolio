@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/info.module.css";
 
 import TypingSimulator from "./typingSimulator";
 import { motion } from "framer-motion";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import '/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css';
 
 const Info: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const size = isHovered ? 400 : 40;
+
+  useEffect(() => {
+    AOS.init({duration:2000});
+  }, []);
 
   const textos = [
     "Hola, mi nombre es Francisca.",
@@ -19,9 +24,9 @@ const Info: React.FC = () => {
   return (
     <div id="about" className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
       <div className="row">
-        <div className="col-lg-6 p-4 d-flex align-items-center justify-content-center">
+        <div className="col-lg-5 p-4 d-flex align-items-center justify-content-center">
           <div className="row">
-            <div className="col">
+            <div className="col" data-aos="zoom-in">
               <img
                 src="/images/perfil.jpeg"
                 alt="foto-perfil"
@@ -38,12 +43,10 @@ const Info: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
-          <div>
-            <h1 className={styles.titleInfo}>About me</h1>
-            <motion.div>
-              <p>
-                ¡Hola! Mi nombre es Francisca Valdivia, me considero una persona
+        <div className="col-lg-6" data-aos="fade-up">
+            <h1 className={`pt-5 pb-4 ${styles.titleInfo}`} >About me</h1>
+            <div className={styles.textInfo}>
+                ¡Hola! Mi nombre es Francisca <span className={styles.text}>Analista Programador</span>, soy persona
                 proactiva con la motivación de enfrentar nuevos desafíos y las
                 ganas de aprender y obtener experiencia, me apasiona la
                 tecnología y cómo esta transforma nuestro mundo, mi enfoque está
@@ -53,10 +56,7 @@ const Info: React.FC = () => {
                 mejor de mí y ser una pieza clave que pueda contribuir de la
                 mejor manera a los objetivos de cualquier empresa en la que me
                 podría estar, y adquirir los conocimientos que pueda.
-              </p>
-            </motion.div>
-            
-          </div>
+            </div>
         </div>
       </div>
     </div>

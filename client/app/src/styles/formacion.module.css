@@ -1,9 +1,12 @@
 .contenedorFormacion{
     background-color: #282c34;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .titleFormacion{
     color: white;
+    font-size: 35px;
 }
 
 .timeline{
