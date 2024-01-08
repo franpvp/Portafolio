@@ -7,3 +7,16 @@
 .tituloContacto {
     font-size: 30px;
 }
+
+.btnContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    color: black;
+    background: white;
+    border: #282c34;
+    border-radius: 30px;
+}

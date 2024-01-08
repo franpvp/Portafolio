@@ -11,25 +11,34 @@ const Proyectos: React.FC = () => {
       }, []);
     return (
         <div className={`container-fluid ${styles.proyectosContainer}`}>
-            <div className="row" data-aos="fade-down">
+            <div className="row justify-content-center" data-aos="fade-down">
                 <h2 className={`${styles.titleProyectos}`}>Mis Proyectos</h2>
                 {/* Proyecto Java */}
-                <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
-                    Banco WestBank
+                <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}>
+                    <div className={styles.contenedor}>
+                        
+                    </div>
                 </div>
-                <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
-                {/* Proyecto Python Django */}
+                <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}>
+                    <div className={styles.contenedor}>
+                    </div>  
                 </div>
-                <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
-                    GamerStoreCL
+                <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}>
+                    <div className={styles.contenedor}>
+                        
+                    </div>
                 </div>
                 {/* Proyecto Python Flask */}
-                <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
-                    
+                <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}>
+                    <div className={styles.contenedor}>
+                            
+                    </div>
                 </div>
                 {/* Proyecto Ionic */}
-                <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}>
-                    
+                <div className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}>
+                    <div className={styles.contenedor}>
+                            
+                    </div>
                 </div>
             </div>
         </div>

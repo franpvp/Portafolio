@@ -15,4 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+.contenedor {
+    width: 400px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid white;
+}

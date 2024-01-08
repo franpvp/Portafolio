@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,12 +30,31 @@ type User = {
 // Client component
 const Home: React.FC = () => {
 
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
   const volverAlInicio = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpia el listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
 
   return (
     <div>
@@ -47,9 +66,12 @@ const Home: React.FC = () => {
       <Proyectos />
       <Certificacion />
       <Contacto />
-        <button className="btn-scrolltop" id="btn-scrolltop" onClick={volverAlInicio}>
-          <FontAwesomeIcon icon={faChevronUp} />
-        </button>
+      <button
+        className={`btn-scrolltop ${showScrollTop ? 'btn-scrolltop-on' : ''}`}
+        id="btn-scrolltop"
+        onClick={volverAlInicio}>
+        <FontAwesomeIcon icon={faChevronUp} />
+      </button>
       <Footer />
       
     </div>
