@@ -26,7 +26,7 @@ const Info: React.FC = () => {
       <div className="row">
         <div className="col-lg-5 p-4 d-flex align-items-center justify-content-center">
           <div className="row">
-            <div className="col" data-aos="zoom-in">
+            <div className="col">
               <img
                 src="/images/perfil.jpeg"
                 alt="foto-perfil"
@@ -36,8 +36,9 @@ const Info: React.FC = () => {
                   borderRadius: "50%",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                 }}
+                data-aos="zoom-in"
               />
-              <div className="col pt-4">
+              <div className="col pt-4" data-aos="fade-up">
                 <TypingSimulator texts={textos} />
               </div>
             </div>

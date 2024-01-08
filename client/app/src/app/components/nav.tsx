@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import '../styles/globals.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Imagenes
+import imgGithub from '../../../public/images/github.png';
+import imgLinkedin from '../../../public/images/linkedin.png';
+
 const Navbar: React.FC = () => {
+
+    useEffect(() => {
+        AOS.init({duration:2000});
+    }, []);
+
+    const clickGitHub = () => {
+        // Aquí puedes añadir la lógica que deseas ejecutar al hacer clic en el botón de LinkedIn
+        console.log('Clic en el botón de GitHub');
+    };
+
+    const clickLinkedin = () => {
+    // Aquí puedes añadir la lógica que deseas ejecutar al hacer clic en el botón de LinkedIn
+    console.log('Clic en el botón de Linkedin');
+    };
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary p-3">
@@ -45,6 +68,18 @@ const Navbar: React.FC = () => {
                                     </Link>
                                 </li>
                             </ul>
+                            <a href="#" onClick={clickGitHub} data-aos="zoom-in">
+                                <span className="githubIcon navbar-text">
+                                    <Image src={imgGithub} alt="img-github" width={50} height={50} />
+                                </span>
+                            </a>
+                            
+                            <a href="#" onClick={clickLinkedin} data-aos="zoom-in">
+                                <span className="linkedinIcon navbar-text" style={{ marginLeft: '15px' }}>
+                                    <Image src={imgLinkedin} alt="img-linkedin" width={50} height={50} />
+                                </span>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>

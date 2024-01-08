@@ -1,8 +1,13 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
+// Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+// Js 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 import "/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css";
 
@@ -25,6 +30,13 @@ type User = {
 // Client component
 const Home: React.FC = () => {
 
+  const volverAlInicio = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div>
       <Navbar />
@@ -35,7 +47,11 @@ const Home: React.FC = () => {
       <Proyectos />
       <Certificacion />
       <Contacto />
+        <button className="btn-scrolltop" id="btn-scrolltop" onClick={volverAlInicio}>
+          <FontAwesomeIcon icon={faChevronUp} />
+        </button>
       <Footer />
+      
     </div>
   );
 };

@@ -25,7 +25,6 @@ const Certificacion: React.FC = () => {
                             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                         }}
                     />
-                    <button type="button" className="btn btn-light mt-4">Descargar</button>
                 </div>
                 {/* DuocUC */}
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center" data-aos="fade-right">
@@ -39,7 +38,6 @@ const Certificacion: React.FC = () => {
                             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                         }}
                     />
-                    <button type="button" className="btn btn-light mt-4 mb-4">Descargar</button>
                 </div>
             </div>
         </div>

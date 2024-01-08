@@ -14,9 +14,9 @@ const Skills = () => {
   return (
     <div id="skills" className={`row ${styles.selectorSkillsContainer}`}>
       <br />
-      <h2 className={`${styles.titleSkills} pb-5`} data-aos="fade-left">Skills</h2>
+      <h2 className={`${styles.titleSkills} pb-5`} data-aos="fade-up">Skills</h2>
         {/* Java */}
-        <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-down">
+        <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-up">
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}` }>
               <img
@@ -45,7 +45,7 @@ const Skills = () => {
         </div>
       
       {/* Python Django */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-down">
+      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-up">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img
@@ -73,7 +73,7 @@ const Skills = () => {
         </div>
       </div>
       {/* SQL */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-down">
+      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-up">
         <div className={`text-center pt-4 ${styles.skillsList}`}>
           <div className={styles.content}>
             <img

@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '@/styles/contacto.module.css';
 import { color } from 'framer-motion';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Contacto: React.FC = () => {
+
+    useEffect(() => {
+        AOS.init({duration:2000});
+    }, []);
+      
     return (
-        <div id="contacto" className={`container-fluid pt-3 mt-3 ${styles.contenedorContacto}`}>
-            <div className="row">
-                <h2 className='text-center p-2'>Contacto</h2>
+        <div id="contacto" className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}>
+            <div className="row" data-aos="fade-up">
+                <h2 className={`text-center p-2 ${styles.tituloContacto}`}>Contacto</h2>
                 <div className="col"></div>
                 <div className="col-lg-8 p-4">
                     <form method='post' action="#">

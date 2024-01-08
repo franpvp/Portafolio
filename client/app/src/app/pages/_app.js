@@ -1,12 +1,14 @@
-import '/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css';
+// _app.js
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Cursor from "./components/cursor";
+// Agregar los íconos que necesitas al library
+library.add(faChevronUp);
 
-// Now we can add the component in return () code should look like this.
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
 
-  return (
-    <>
-    <Cursor />
-    <Component {...pageProps} />
-    </>
-  );
+export default MyApp;
