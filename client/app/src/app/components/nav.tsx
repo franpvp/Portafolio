@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary p-3">
+            <nav className="navbar navbar-expand-lg p-3">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Portafolio</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

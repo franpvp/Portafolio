@@ -75,9 +75,6 @@
   transition: background-color 0.9s ease, transform 0.5s ease;
 }
 
-.content:hover {
-  transform: scale(1.2);
-}
 
 .contentSkills {
   display: flex;
@@ -91,6 +88,68 @@
   background: white;
   border-radius: 20px;
 }
+
+/* .contenedorSkill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillBar{
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.outer{
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.inner{
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#number{
+  font-weight: 600;
+  color: black;
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  padding: 50px;
+}
+
+#number:hover{
+  opacity: 1;
+}
+
+.circle{
+  stroke: cornflowerblue;
+  stroke-width: 10px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  stroke-linecap: round;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+  100% {
+      stroke-dashoffset: 157.5;  
+  }
+}
+
+.mask{
+  position: absolute;
+} */
+
+
 
 
 

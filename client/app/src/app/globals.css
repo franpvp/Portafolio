@@ -11,7 +11,7 @@
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 999999 !important;
-    background-color: #0000005e;
+    background-color: transparent !important;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
   }
   
@@ -43,7 +43,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .githubIcon, .linkedinIcon {
   transition: transform 0.5s ease-in-out;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from "@/styles/certificacion.module.css"
+import styles from "@/styles/certificacion.module.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

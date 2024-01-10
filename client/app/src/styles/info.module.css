@@ -25,7 +25,8 @@
 .contenedorInfo{
     background-color: #282c34;
     color: white;
-    padding-bottom: 100px ;
+    padding-bottom: 100px;
+    z-index: 2;
 }
 
 
