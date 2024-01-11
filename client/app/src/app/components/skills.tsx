@@ -26,125 +26,128 @@ const Skills = () => {
   }, [contador]);
 
   return (
-    <div id="skills" className={`row ${styles.selectorSkillsContainer}`}>
-      <br />
-      <h2 className={`${styles.titleSkills} pb-5`} data-aos="fade-up">
-        Skills
-      </h2>
-      {/* Java */}
-      <div className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`} data-aos="fade-up">
-        <div className={`text-center pt-4 ${styles.skillsList}`}>
+    <div id="skills" className={`container-fluid ${styles.selectorSkillsContainer}`}>
+      <div className="row">
+        <br />
+        <h2 className={`${styles.titleSkills} pb-5`} data-aos="fade-up">
+          Skills
+        </h2>
+        {/* Java */}
+        <div
+          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
+          data-aos="fade-up"
+        >
+          <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img
                 src="/images/java.png"
                 alt="java"
                 style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '50%',
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
                 }}
               />
             </div>
+          </div>
         </div>
-      </div>
 
-      {/* Python Django */}
-      <div
-        className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-        data-aos="fade-up"
-      >
-        <div className={`text-center pt-4 ${styles.skillsList}`}>
+        {/* Python Django */}
+        <div
+          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
+          data-aos="fade-up"
+        >
+          <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img
                 src="/images/django-python-logo.png"
                 alt="java"
                 style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '50%',
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
                 }}
               />
             </div>
+          </div>
         </div>
-        
-      </div>
-      {/* SQL */}
-      <div
-        className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-        data-aos="fade-up">
-        <div className={`text-center pt-4 ${styles.skillsList}`}>
+        {/* SQL */}
+        <div
+          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
+          data-aos="fade-up"
+        >
+          <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img
                 src="/images/sql.png"
                 alt="java"
                 style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '50%',
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
                 }}
               />
             </div>
+          </div>
         </div>
-      </div>
 
-      {/* HTML CSS */}
-      <div
-        className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-        data-aos="fade-up">
-        <div className={`text-center pt-4 ${styles.skillsList}`}>
+        {/* HTML CSS */}
+        <div
+          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
+          data-aos="fade-up"
+        >
+          <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img
                 src="/images/htmlcss.png"
                 alt="java"
                 style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '50%',
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
                 }}
               />
             </div>
+          </div>
         </div>
-        
-      </div>
-      {/* React */}
-      <div
-        className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-        data-aos="fade-up"
-      >
-        <div className={`text-center pt-4 ${styles.skillsList}`}>
+        {/* React */}
+        <div
+          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
+          data-aos="fade-up"
+        >
+          <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img
                 src="/images/react-logo.png"
                 alt="java"
                 style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '50%',
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
                 }}
               />
             </div>
+          </div>
         </div>
-        
-      </div>
-      {/* NodeJS ExpressJS */}
-      <div
-        className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}
-        data-aos="fade-up"
-      >
-        <div className={`text-center pt-4 ${styles.skillsList}`}>
+        {/* NodeJS ExpressJS */}
+        <div
+          className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}
+          data-aos="fade-up"
+        >
+          <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img
                 src="/images/mysql.png"
                 alt="java"
                 style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '50%',
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
                 }}
               />
             </div>
+          </div>
         </div>
-        
       </div>
     </div>
   );
