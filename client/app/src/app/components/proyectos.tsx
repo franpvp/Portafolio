@@ -26,72 +26,73 @@ const Proyectos: React.FC = () => {
       }, []);
     return (
         <div className={`container-fluid ${styles.proyectosContainer}`}>
-    <div className="row" data-aos="fade-down">
-        <h2 className={`pt-4 pb-5 ${styles.titleProyectos}`}>Mis Proyectos</h2>
+            <div className="row">
+                <h2 className={`pt-4 pb-5 ${styles.titleProyectos}`}>Mis Proyectos</h2>
+                {/* Proyecto Java GUI */}
+                <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
+                    <div className="card text-bg-secondary mb-3 p-3">
+                        <Image className={`card-img-top`} src={imgAppJava} alt="img-java"/>
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Aplicación Bancaria (GUI)</h5>
+                            <p className="card-text">
+                                Sistema integrado con el motor de base de datos MySQL 
+                                que permite llevar a cabo transferencias, giros y depósitos en 
+                                las cuentas de los clientes.
+                            </p>
+                        </div>
+                        <div className="card-body d-flex justify-content-middle">
+                            <div className={`${styles.javaIcon}`}>
+                                Java
+                            </div>
+                            <div className={`${styles.mysqlIcon}`}>
+                                MySQL
+                            </div>
+                        </div>
+                        <div className="card-body">
+                            <div className={styles.linkCode} onClick={clickOptionAppBank}>
+                                    <AiOutlineCode style={{ marginRight: '10px' }} /> Code
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        {/* Proyecto Java GUI */}
-        <div className={`col-12 col-md-6 mb-4`} data-aos="zoom-in">
-            <div className={styles.contenedor}>
-                <div className="card text-bg-secondary mb-3 p-3">
-                    <Image className={`card-img-top ${styles.imagen} fixed-size-image`} src={imgAppJava} alt="img-java"/>
-                    <div className="card-body">
-                        <h5 className="card-title">Aplicación Bancaria (GUI)</h5>
-                        <p className="card-text">
-                            Sistema integrado con el motor de base de datos MySQL 
-                            que permite llevar a cabo transferencias, giros y depósitos en 
-                            las cuentas de los clientes.
-                        </p>
-                    </div>
-                    <div className="card-body d-flex justify-content-between">
-                        <div className={`${styles.javaIcon}`}>
-                            Java
-                        </div>
-                        <div className={`${styles.mysqlIcon}`}>
-                            MySQL
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <div className={styles.linkCode} onClick={clickOptionAppBank}>
-                                <AiOutlineCode style={{ marginRight: '10px' }} /> Code
+                {/* Clinica */}
+                <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
+                    <div className={styles.contenedor}>
+                        <div className="card text-bg-secondary mb-3 p-3">
+                            <Image className={`card-img-top`} src={imgClinicaPage} alt="img-clinica"/>
+                            <div className="card-body">
+                                <h5 className="card-title text-center">Página Clínica</h5>
+                                <p className="card-text">
+                                    Sistema especializado en el ámbito de la medicina que facilita la programación 
+                                    de citas médicas y además de proporcionar información sobre medicamentos a través de 
+                                    una API.
+                                </p>
+                            </div>
+                            <div className="card-body d-flex">
+                                <div className={`${styles.htmlIcon}`}>
+                                    Html
+                                </div>
+                                <div className={`${styles.cssIcon}`}>
+                                    CSS
+                                </div>
+                                <div className={`${styles.javascriptIcon}`}>
+                                    Javascript
+                                </div>
+                                <div className={`${styles.pythonIcon}`}>
+                                    Python
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <div className={styles.linkCode} onClick={clickOptionClinica}>
+                                    <AiOutlineCode style={{ marginRight: '10px' }} /> Code
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        {/* Clinica */}
-        <div className={`col-12 col-md-6 mb-4`} data-aos="zoom-in">
-            <div className={styles.contenedor}>
-                <div className="card text-bg-secondary mb-3 p-3">
-                    <Image  className={`${styles.imagen} fixed-size-image`} src={imgClinicaPage} alt="img-clinica"/>
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div className="card-body d-flex justify-content-between">
-                        <div className={`${styles.htmlIcon}`}>
-                            Html
-                        </div>
-                        <div className={`${styles.cssIcon}`}>
-                            CSS
-                        </div>
-                        <div className={`${styles.javascriptIcon}`}>
-                            Javascript
-                        </div>
-                        <div className={`${styles.pythonIcon}`}>
-                            Python
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <div className={styles.linkCode} onClick={clickOptionClinica}>
-                            <AiOutlineCode style={{ marginRight: '10px' }} /> Code
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
     );
 }

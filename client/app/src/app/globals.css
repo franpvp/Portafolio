@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .flare {
     position: fixed;
     border: 4px solid #ec4e39 !important;

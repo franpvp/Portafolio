@@ -1,11 +1,7 @@
 .proyectosContainer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
     padding-top: 20px;
     background-color: #282c34;
     color: white;
-    
 }
 
 .titleProyectos{
@@ -17,19 +13,6 @@
     font-size: 30px;
 }
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border-radius: 20px;
-}
-
-.imagen {
-    border-radius: 10px;
-    object-fit: cover;
-    width: 100%;
-}
 
 .fixed-size-image {
     max-width: 400px;
@@ -55,7 +38,6 @@
     background: white;
     color: black;
     transform: scale(1.05);
-    
     transition: all 0.5s ease-in-out;
 }
 
