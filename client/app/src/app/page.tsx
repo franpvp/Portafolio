@@ -8,8 +8,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-
-import "/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css";
+// Styles
+import './styles/globals.css';
 
 // Componentes
 import Navbar from "./components/nav";

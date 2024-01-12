@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import '/Users/franciscavaldivia/Desktop/exp-next/client/app/src/app/globals.css';
+import '../styles/globals.css';
 
 const Info: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
