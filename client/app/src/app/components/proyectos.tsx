@@ -27,7 +27,7 @@ const Proyectos: React.FC = () => {
     return (
         <div className={`container-fluid ${styles.proyectosContainer}`}>
             <div className="row">
-                <h2 className={`pt-4 pb-5 ${styles.titleProyectos}`}>Mis Proyectos</h2>
+                <h2 className={`pt-4 pb-5 ${styles.titleProyectos}`} data-aos="fade-up">Mis Proyectos</h2>
                 {/* Proyecto Java GUI */}
                 <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
                     <div className="card text-bg-secondary mb-3 p-3">

@@ -45,48 +45,36 @@ const Contacto: React.FC = () => {
   }, []);
 
   return (
-    <div
-      id="contacto"
-      className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}
-    >
+    <div id="contacto" className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}>
       <div className="row" data-aos="fade-up">
         <h2 className={`text-center p-2 ${styles.tituloContacto}`}>Contacto</h2>
-        <div className="col"></div>
-        <div className="col-lg-8 p-4">
-          <form method="post" action="#" onSubmit={enviarCorreo}>
-            <div className="col-xs-12 col-md-12 col-lg-12 mb-3">
-              <label htmlFor="email" className="form-label">
-                Correo electrónico:
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                name="email"
-                required
-              />
-            </div>
-            <div className="col-xs-12 col-md-12 col-lg-12 mb-3">
-              <label htmlFor="mensaje" className="form-label">
-                Mensaje:
-              </label>
-              <textarea
-                className="form-control"
-                id="mensaje"
-                name="mensaje"
-                required
-              ></textarea>
-            </div>
-            <div className="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
-              <button className="d-flex justify-content-center" type="submit">
-                <div className={`${styles.btnContacto}`}>Enviar</div>
-              </button>
-            </div>
-          </form>
+        <div className="col-lg-8 p-4 mx-auto">
+            <form method="post" action="#" onSubmit={enviarCorreo}>
+              {/* Input de Correo Electrónico */}
+                <div className="mb-3">
+                    <div className="form-floating mb-3">
+                        <input type="email" className="form-control" id="email" name="email" placeholder="name@example.com"/>
+                        <label htmlFor="email" style={{ color: 'gray' }}>Correo electrónico:</label>
+                    </div>
+                </div>
+                {/* Input de Mensaje */}
+                <div className="mb-3">
+                    <div className="form-floating">
+                        <textarea className="form-control" placeholder="Leave a comment here" id="mensaje" name="mensaje" required></textarea>
+                        <label htmlFor="mensaje" style={{ color: 'gray' }}>Mensaje:</label>
+                    </div>
+                </div>
+                {/* Boton Contacto */}
+                <div className="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
+                    <button className="d-flex justify-content-center" type="submit">
+                        <div className={`${styles.btnContacto}`}>Enviar</div>
+                    </button>
+                </div>
+            </form>
         </div>
-        <div className="col"></div>
       </div>
     </div>
+
   );
 };
 
