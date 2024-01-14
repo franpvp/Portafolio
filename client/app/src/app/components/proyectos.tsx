@@ -20,6 +20,10 @@ const Proyectos: React.FC = () => {
         window.location.href = 'https://github.com/franpvp/ClinicaProyecto';
     }
 
+    const clickOnOthers = () => {
+        window.location.href = 'https://github.com/franpvp?tab=repositories';
+    }
+
     
     useEffect(() => {
         AOS.init({duration:2000});
@@ -89,6 +93,13 @@ const Proyectos: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row d-flex justify-content-center mt-4">
+                <div className={`col-12 col-sm-12 col-md-6 mb-4 d-flex justify-content-center`}>
+                    <div className={styles.linkCode} onClick={clickOnOthers} data-aos="zoom-in">
+                        <AiOutlineCode style={{ marginRight: '10px' }} /> Repositorios
                     </div>
                 </div>
             </div>
