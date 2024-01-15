@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-// Js 
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
@@ -33,27 +32,36 @@ const Home: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const volverAlInicio = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    if (typeof window !== 'undefined'){
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Limpia el listener cuando el componente se desmonta
-    return () => {
+    if (typeof window !== 'undefined'){
+      const handleScroll = () => {
+        if (window.scrollY > 300) {
+          setShowScrollTop(true);
+        } else {
+          setShowScrollTop(false);
+        }
+      };
+      window.addEventListener('scroll', handleScroll);
+       // Limpia el listener cuando el componente se desmonta
+      return () => {
+      
       window.removeEventListener('scroll', handleScroll);
-    };
+
+      
+    
+  };
+    }
+
+   
   }, []); 
 
   return (

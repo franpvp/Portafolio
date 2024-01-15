@@ -20,6 +20,7 @@ const Info: React.FC = () => {
     "Hola, mi nombre es Francisca.",
     "Bienvenido a mi Portafolio!",
   ];
+  
 
   return (
     <div id="about" className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
