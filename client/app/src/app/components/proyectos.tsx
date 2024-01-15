@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from '@/styles/proyectos.module.css';
-import Image from 'next/image';
 import CodeImage from '../../../public/images/web.png';
 import { AiOutlineCode } from 'react-icons/ai';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-import imgAppJava from '../../../public/images/westbank.png';
-import imgClinicaPage from '../../../public/images/clinicaPage.png';
 
 const Proyectos: React.FC = () => {
 
@@ -35,7 +31,7 @@ const Proyectos: React.FC = () => {
                 {/* Proyecto Java GUI */}
                 <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
                     <div className="card text-bg-secondary mb-3 p-3">
-                        <Image className={`card-img-top`} src={imgAppJava} alt="img-java"/>
+                        <img className={`card-img-top`} src="/images/westbank.png" alt="img-java"/>
                         <div className="card-body">
                             <h5 className="card-title text-center">Aplicación Bancaria (GUI)</h5>
                             <p className="card-text">
@@ -64,7 +60,7 @@ const Proyectos: React.FC = () => {
                 <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
                     <div className={styles.contenedor}>
                         <div className="card text-bg-secondary mb-3 p-3">
-                            <Image className={`card-img-top`} src={imgClinicaPage} alt="img-clinica"/>
+                            <img className={`card-img-top`} src="/images/clinicaPage.png" alt="img-clinica"/>
                             <div className="card-body">
                                 <h5 className="card-title text-center">Página Clínica</h5>
                                 <p className="card-text">
