@@ -48,7 +48,7 @@ const Contacto: React.FC = () => {
     <div id="contacto" className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}>
       <div className="row" data-aos="fade-up">
         <h2 className={`text-center p-2 ${styles.tituloContacto}`}>Contacto</h2>
-        <div className="col-lg-8 p-4 mx-auto">
+        <div className="col-sm-10 col-md-8 col-lg-8 p-4 mx-auto">
             <form method="post" action="#" onSubmit={enviarCorreo}>
               {/* Input de Correo Electrónico */}
                 <div className="mb-3">
@@ -65,7 +65,8 @@ const Contacto: React.FC = () => {
                     </div>
                 </div>
                 {/* Boton Contacto */}
-                <div className="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
+                <div className="row">
+                  <div className="col d-flex justify-content-center"></div>
                     <button className="d-flex justify-content-center" type="submit">
                         <div className={`${styles.btnContacto}`}>Enviar</div>
                     </button>

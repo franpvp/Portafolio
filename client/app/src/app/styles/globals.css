@@ -25,6 +25,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+html{
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
   overflow-x: hidden;
 }
 
@@ -42,10 +52,10 @@ body {
   
   /* We need to remove this custom cursor in mobile devices */
   @media screen and (max-width: 768px) {
-    .flare {
+    .flare {  
+      display: none;
       width: 0;
       height: 0;
-      transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
     }
   }
   .flare.pointer {

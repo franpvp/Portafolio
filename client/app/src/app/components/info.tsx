@@ -48,7 +48,7 @@ const Info: React.FC = () => {
         <div className="col-lg-6" data-aos="fade-up">
             <h1 className={`pt-5 pb-4 ${styles.titleInfo}`} >About me</h1>
             <div className={styles.textInfo}>
-                ¡Hola! Mi nombre es Francisca <span className={styles.text}>Analista Programador</span>, soy persona
+                ¡Hola! Mi nombre es Francisca <span className={styles.text}>Analista Programador</span>, soy una persona
                 proactiva con la motivación de enfrentar nuevos desafíos y las
                 ganas de aprender y obtener experiencia, me apasiona la
                 tecnología y cómo esta transforma nuestro mundo, mi enfoque está

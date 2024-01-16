@@ -21,13 +21,12 @@ import Contacto from "./components/contacto";
 import Footer from "./components/footer";
 import Cursor from "./components/cursor";
 
-type User = {
-  id: number;
-  name: string;
-};
-
 // Client component
 const Home: React.FC = () => {
+
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
 
   const [showScrollTop, setShowScrollTop] = useState(false);
 

@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 import '../styles/globals.css';
 import styles from '@/styles/nav.module.css';
@@ -39,7 +42,9 @@ const Navbar: React.FC = () => {
                     <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <FontAwesomeIcon icon={faTimes} />
+                            </button>
                         </div>
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-center flex-grow-1">
