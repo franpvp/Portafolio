@@ -23,7 +23,7 @@ const Info: React.FC = () => {
   
 
   return (
-    <div id="about" className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
+    <div id="about" style={{ width: '100%' }} className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
       <div className="row">
         <div className="col-lg-5 p-4 d-flex align-items-center justify-content-center">
           <div className="row">

@@ -3,9 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-
-
-import '../styles/globals.css';
 import styles from '@/styles/nav.module.css';
 
 import AOS from 'aos';

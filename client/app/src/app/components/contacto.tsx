@@ -5,6 +5,7 @@ import { color } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { error } from "console";
+import '../styles/globals.css';
 
 type Contacto = {
   correo: string;
