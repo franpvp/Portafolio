@@ -46,7 +46,7 @@ const Contacto: React.FC = () => {
 
   return (
     <div id="contacto" className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}>
-      <div className="row" data-aos="fade-up">
+      <div className="row">
         <h2 className={`text-center p-2 ${styles.tituloContacto}`}>Contacto</h2>
         <div className="col-sm-10 col-md-8 col-lg-8 p-4 mx-auto">
             <form method="post" action="#" onSubmit={enviarCorreo}>

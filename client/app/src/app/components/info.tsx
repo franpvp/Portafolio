@@ -36,15 +36,15 @@ const Info: React.FC = () => {
                   borderRadius: "50%",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                 }}
-                data-aos="zoom-in"
+                
               />
-              <div className="col pt-4" data-aos="fade-up">
+              <div className="col pt-4">
                 <TypingSimulator texts={textos} />
               </div>
             </div>
           </div>
         </div>
-        <div className="col-lg-6" data-aos="fade-up">
+        <div className="col-lg-6">
             <h1 className={`pt-5 pb-4 ${styles.titleInfo}`} >About me</h1>
             <div className={styles.textInfo}>
                 ¡Hola! Mi nombre es Francisca <span className={styles.text}>Analista Programador</span>, soy una persona

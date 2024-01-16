@@ -27,9 +27,9 @@ const Proyectos: React.FC = () => {
     return (
         <div className={`container-fluid ${styles.proyectosContainer}`}>
             <div className="row">
-                <h2 className={`pt-4 pb-5 ${styles.titleProyectos}`} data-aos="fade-up">Mis Proyectos</h2>
+                <h2 className={`pt-4 pb-5 ${styles.titleProyectos}`}>Mis Proyectos</h2>
                 {/* Proyecto Java GUI */}
-                <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
+                <div className={`col-12 col-sm-12 col-md-6 mb-4`}>
                     <div className="card text-bg-secondary mb-3 p-3">
                         <img className={`card-img-top`} src="/images/westbank.png" alt="img-java"/>
                         <div className="card-body">
@@ -57,7 +57,7 @@ const Proyectos: React.FC = () => {
                 </div>
 
                 {/* Clinica */}
-                <div className={`col-12 col-sm-12 col-md-6 mb-4`} data-aos="zoom-in">
+                <div className={`col-12 col-sm-12 col-md-6 mb-4`}>
                     <div className={styles.contenedor}>
                         <div className="card text-bg-secondary mb-3 p-3">
                             <img className={`card-img-top`} src="/images/clinicaPage.png" alt="img-clinica"/>
@@ -94,7 +94,7 @@ const Proyectos: React.FC = () => {
             </div>
             <div className="row d-flex justify-content-center mt-4">
                 <div className={`col-12 col-sm-12 col-md-6 mb-4 d-flex justify-content-center`}>
-                    <div className={styles.linkCode} onClick={clickOnOthers} data-aos="zoom-in">
+                    <div className={styles.linkCode} onClick={clickOnOthers}>
                         <AiOutlineCode style={{ marginRight: '10px' }} /> Repositorios
                     </div>
                 </div>

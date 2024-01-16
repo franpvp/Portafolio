@@ -29,13 +29,12 @@ const Skills = () => {
     <div id="skills" className={`container-fluid ${styles.selectorSkillsContainer}`}>
       <div className="row">
         <br />
-        <h2 className={`${styles.titleSkills} pb-5`} data-aos="fade-up">
+        <h2 className={`${styles.titleSkills} pb-5`}>
           Skills
         </h2>
         {/* Java */}
         <div
           className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-          data-aos="fade-up"
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
@@ -55,7 +54,6 @@ const Skills = () => {
         {/* Python Django */}
         <div
           className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-          data-aos="fade-up"
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
@@ -74,7 +72,6 @@ const Skills = () => {
         {/* SQL */}
         <div
           className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-          data-aos="fade-up"
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
@@ -94,7 +91,6 @@ const Skills = () => {
         {/* HTML CSS */}
         <div
           className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-          data-aos="fade-up"
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
@@ -113,7 +109,6 @@ const Skills = () => {
         {/* React */}
         <div
           className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-          data-aos="fade-up"
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
@@ -132,7 +127,6 @@ const Skills = () => {
         {/* NodeJS ExpressJS */}
         <div
           className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}
-          data-aos="fade-up"
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>

@@ -73,13 +73,13 @@ const Navbar: React.FC = () => {
                                 
                             </ul>
                             <div className="d-flex justify-content-center align-item-center">
-                                <a href="https://github.com/franpvp?tab=repositories" onClick={clickGitHub} data-aos="zoom-in">
+                                <a href="https://github.com/franpvp?tab=repositories" onClick={clickGitHub}>
                                     <span className="githubIcon navbar-text" style={{ marginLeft: '15px' }}>
                                         <Image src={imgGithub} alt="img-github" width={50} height={50} />
                                     </span>
                                 </a>
                                 
-                                <a href="https://www.linkedin.com/in/francisca-valdivia-ba60662a5/" onClick={clickLinkedin} data-aos="zoom-in">
+                                <a href="https://www.linkedin.com/in/francisca-valdivia-ba60662a5/" onClick={clickLinkedin}>
                                     <span className="linkedinIcon navbar-text" style={{ marginLeft: '15px' }}>
                                         <Image src={imgLinkedin} alt="img-linkedin" width={50} height={50} />
                                     </span>
