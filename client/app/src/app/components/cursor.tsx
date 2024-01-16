@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../styles/globals.css';
 
 // This functional component represents a custom cursor with a flare effect.
 function Cursor() {

@@ -39,9 +39,9 @@ const Navbar: React.FC = () => {
                     <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <div data-bs-dismiss="offcanvas" aria-label="Close">
                                 <FontAwesomeIcon icon={faTimes} />
-                            </button>
+                            </div>
                         </div>
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-center flex-grow-1">

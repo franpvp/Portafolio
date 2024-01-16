@@ -10,6 +10,7 @@
 
 .btnContacto {
     display: flex;
+    background: transparent;
     justify-content: center;
     align-items: center;
     cursor: pointer;

@@ -5,7 +5,6 @@ import { color } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { error } from "console";
-import '../styles/globals.css';
 
 type Contacto = {
   correo: string;
@@ -68,9 +67,10 @@ const Contacto: React.FC = () => {
                 {/* Boton Contacto */}
                 <div className="row">
                   <div className="col d-flex justify-content-center"></div>
-                    <button className="d-flex justify-content-center" type="submit">
-                        <div className={`${styles.btnContacto}`}>Enviar</div>
-                    </button>
+                  <div className="d-flex justify-content-center">
+                    {/* Cambia el div por un botón */}
+                    <button type="submit" className={`${styles.btnContacto}`}>Enviar</button>
+                  </div>
                 </div>
             </form>
         </div>

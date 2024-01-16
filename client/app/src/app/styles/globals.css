@@ -15,7 +15,7 @@
     
 }
 
-body, html {
+body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,12 +25,19 @@ body, html {
     rgb(var(--background-start-rgb));
 }
 
-@media (max-width: 767px) {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* @media (max-width: 767px){
   body, html {
     overflow-x: hidden;
   }
-}
-
+} */
 
 .flare {
     position: fixed;
@@ -45,7 +52,7 @@ body, html {
   }
   
   /* We need to remove this custom cursor in mobile devices */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .flare {  
       display: none;
       width: 0;

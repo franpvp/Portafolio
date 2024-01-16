@@ -73,12 +73,12 @@ const Home: React.FC = () => {
       <Proyectos />
       <Certificacion />
       <Contacto />
-      <button
+      <div
         className={`btn-scrolltop ${showScrollTop ? 'btn-scrolltop-on' : ''}`}
         id="btn-scrolltop"
         onClick={volverAlInicio}>
         <FontAwesomeIcon icon={faChevronUp} />
-      </button>
+      </div>
       <Footer />
       
     </div>

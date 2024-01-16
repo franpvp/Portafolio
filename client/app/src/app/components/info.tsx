@@ -10,7 +10,6 @@ import 'aos/dist/aos.css';
 import '../styles/globals.css';
 
 const Info: React.FC = () => {
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     AOS.init({duration:2000});
