@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -10,12 +11,14 @@
 }
 
 * {
-    cursor: none;
+  cursor: none;
     margin: 0;
     
 }
 
 body, html {
+  font-family: 'Roboto', sans-serif;
+  background: white !important; 
   margin: 0;
   padding: 0;
   width: 100%;
@@ -30,29 +33,28 @@ body, html {
 } */
 
 .flare {
-    position: fixed;
-    border: 4px solid #ec4e39 !important;
-    border-radius: 50%;
-    mix-blend-mode: screen;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 999999 !important;
-    background-color: transparent !important;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-  }
-  
-  /* We need to remove this custom cursor in mobile devices */
-  @media screen and (max-width: 767px) {
-    .flare {  
+  position: fixed;
+  border: 4px solid red !important;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99999999 !important; /* Ajusta este valor según sea necesario */
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 767px) {
+  .flare {
       display: none;
       width: 0;
       height: 0;
-    }
   }
-  .flare.pointer {
-    opacity: 0 !important;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  }
+}
+
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
 
 .iconArrow{
   background-color: black;

@@ -2,18 +2,27 @@ import React, { useEffect, useState } from "react";
 import styles from "@/styles/info.module.css";
 
 import TypingSimulator from "./typingSimulator";
+import Image from 'next/image';
 import { motion } from "framer-motion";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// Imagenes
+import imgGithub from '../../../public/images/github.png';
+import imgLinkedin from '../../../public/images/linkedin.png';
+
 
 import '../styles/globals.css';
 
 const Info: React.FC = () => {
 
-  useEffect(() => {
-    AOS.init({duration:2000});
-  }, []);
+  const clickGitHub = () => {
+    // Aquí puedes añadir la lógica que deseas ejecutar al hacer clic en el botón de LinkedIn
+    console.log('Clic en el botón de GitHub');
+  };
+
+  const clickLinkedin = () => {
+  // Aquí puedes añadir la lógica que deseas ejecutar al hacer clic en el botón de LinkedIn
+  console.log('Clic en el botón de Linkedin');
+  };
 
   const textos = [
     "Hola, mi nombre es Francisca.",
@@ -24,7 +33,7 @@ const Info: React.FC = () => {
   return (
     <div id="about" style={{ width: '100%' }} className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
       <div className="row">
-        <div className="col-lg-5 p-4 d-flex align-items-center justify-content-center">
+        <div className="col-lg-12 p-4 d-flex flex-column align-items-center justify-content-center">
           <div className="row">
             <div className="col">
               <img
@@ -36,30 +45,43 @@ const Info: React.FC = () => {
                   borderRadius: "50%",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                 }}
-                
               />
-              <div className="col pt-4">
-                <TypingSimulator texts={textos} />
-              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col pt-4">
+              <TypingSimulator texts={textos} />
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
-            <h1 className={`pt-5 pb-4 ${styles.titleInfo}`} >About me</h1>
-            <div className={styles.textInfo}>
-                ¡Hola! Mi nombre es Francisca <span className={styles.text}>Analista Programador</span>, soy una persona
-                proactiva con la motivación de enfrentar nuevos desafíos y las
-                ganas de aprender y obtener experiencia, me apasiona la
-                tecnología y cómo esta transforma nuestro mundo, mi enfoque está
-                centrado en la búsqueda de trabajos que involucren el desarrollo
-                Full Stack, y de proyectos que tengan un efecto real, quiero
-                participar en equipos multidisciplinarios para poder entregar lo
-                mejor de mí y ser una pieza clave que pueda contribuir de la
-                mejor manera a los objetivos de cualquier empresa en la que me
-                podría estar, y adquirir los conocimientos que pueda.
-            </div>
-        </div>
+    </div>
+    <div className="row d-flex justify-content-center">
+      <div className="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+          <div className={styles.textInfo}>
+            <span className={styles.text}>Analista Programador</span>
+          </div>
+          <div className={styles.textInfo}>
+            Me considero una persona proactiva y apasionada por la tecnología y 
+            cómo esta transforma nuestro mundo, busco desafíos que me permitan contribuir en proyectos 
+            significativos, aportando a equipos multidisciplinarios con mi motivación y ganas de aprender.
+            Busco ser una pieza clave para alcanzar los objetivos de cualquier empresa y seguir adquiriendo 
+            conocimientos.
+          </div>
+          <div className="d-flex justify-content-start">
+              <a href="https://github.com/franpvp?tab=repositories" onClick={clickGitHub}>
+                  <span className="githubIcon navbar-text" style={{ marginLeft: '20px' }}>
+                      <Image src={imgGithub} alt="img-github" width={60} height={60} />
+                  </span>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/francisca-valdivia-ba60662a5/" onClick={clickLinkedin}>
+                  <span className="linkedinIcon navbar-text" style={{ marginLeft: '15px' }}>
+                      <Image src={imgLinkedin} alt="img-linkedin" width={60} height={60} />
+                  </span>
+              </a>
+          </div>
       </div>
+    </div>
     </div>
   );
 };
