@@ -1,32 +1,29 @@
 
 .textInfo{
-    font-family: 'Courier New', monospace;
-    padding: 30px 30px 30px 30px;
+    font-weight: 300;
+    padding: 20px 20px 20px 20px;
     font-size: 20px;
-    border: 1px solid #ddd;
-    transition: font-size 1s ease-in-out, font-weight 1s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
     border-radius: 10px;
     transform-origin: center bottom;
 }
 
 .text {
-  color: #ec4e39;
-  font-weight: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  font-size: 70px;
 }
 
 .titleInfo{
-    color: white;
+    color: gray;
     display: flex;
-    font-size: 40px;
+    font-size: 50px;
     justify-content: center;
     padding: 15px;
 }
 
 .contenedorInfo{
-    background-color: #282c34;
-    color: white;
+    color: black;
     padding-bottom: 100px;
-    z-index: 2;
 }
 
   .row{

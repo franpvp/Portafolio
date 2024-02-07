@@ -8,7 +8,7 @@ const Certificacion: React.FC = () => {
     
     useEffect(() => {
         AOS.init({duration:2000});
-      }, []);
+    }, []);
     return (
         <div id="certificacion" className={`container-fluid pt-5 ${styles.contenedorCert}`}>
             <div className="row" >

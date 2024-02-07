@@ -31,15 +31,37 @@ const Home: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const volverAlInicio = () => {
-    if (typeof window !== 'undefined'){
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+    if (typeof window !== 'undefined') {
+      const currentPosition = window.scrollY;
+      const targetPosition = 0;
+      const distance = targetPosition - currentPosition;
+      const immediateDuration = 800; // Duración en milisegundos (ms) para el desplazamiento inmediato
+      const constantDuration = 800; // Duración en milisegundos (ms) para el desplazamiento constante
+  
+      const startTime = performance.now();
+  
+      // Desplazamiento inmediato al inicio
+      window.scrollTo(0, targetPosition);
+  
+      const animateScroll = (timestamp: number) => {
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / constantDuration, 1);
+        const newPosition = currentPosition + distance * progress;
+  
+        window.scrollTo(0, newPosition);
+  
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+  
+      // Inicia el desplazamiento constante después del desplazamiento inmediato
+      setTimeout(() => {
+        requestAnimationFrame(animateScroll);
+      }, immediateDuration);
     }
-    
   };
-
+  
   useEffect(() => {
     if (typeof window !== 'undefined'){
       const handleScroll = () => {
@@ -54,10 +76,7 @@ const Home: React.FC = () => {
       return () => {
       
       window.removeEventListener('scroll', handleScroll);
-
-      
-    
-  };
+      };
     }
 
    
@@ -65,8 +84,8 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
       <Cursor />
+      <Navbar />
       <Info />
       <Skills />
       <Formacion />

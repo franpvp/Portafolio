@@ -32,14 +32,13 @@ const Navbar: React.FC = () => {
         <div>
             <nav className="navbar navbar-expand-lg p-3">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Portafolio</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                            <div data-bs-dismiss="offcanvas" aria-label="Close">
+                            <div className={styles.closeButton} data-bs-dismiss="offcanvas" aria-label="Close">
                                 <FontAwesomeIcon icon={faTimes} />
                             </div>
                         </div>
@@ -72,21 +71,7 @@ const Navbar: React.FC = () => {
                                 </li>
                                 
                             </ul>
-                            <div className="d-flex justify-content-center align-item-center">
-                                <a href="https://github.com/franpvp?tab=repositories" onClick={clickGitHub}>
-                                    <span className="githubIcon navbar-text" style={{ marginLeft: '15px' }}>
-                                        <Image src={imgGithub} alt="img-github" width={50} height={50} />
-                                    </span>
-                                </a>
-                                
-                                <a href="https://www.linkedin.com/in/francisca-valdivia-ba60662a5/" onClick={clickLinkedin}>
-                                    <span className="linkedinIcon navbar-text" style={{ marginLeft: '15px' }}>
-                                        <Image src={imgLinkedin} alt="img-linkedin" width={50} height={50} />
-                                    </span>
-                                </a>
-                            </div>
-                            
-                            
+                        
                         </div>
                     </div>
                 </div>

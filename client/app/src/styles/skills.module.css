@@ -1,9 +1,8 @@
 
 .selectorSkillsContainer {
+  font-family: 'Roboto', sans-serif;
   background-color: #282c34;
-  padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 60px;
   color: white;
 }
 
@@ -30,8 +29,8 @@
 
 .titleSkills{
   color: white;
-  padding: 20px;
-  font-size: 40px;
+  padding: 30px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

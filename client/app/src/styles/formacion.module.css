@@ -1,21 +1,22 @@
 .contenedorFormacion{
     margin: 0 !important;
-    background-color: #282c34;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    background-color: white;
+    padding: 60px;
 }
 
 .titleFormacion{
-    color: white;
-    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 50px;
+    padding: 40px;
 }
 
 .timeline{
-    padding-top: 30px;
+    padding-top: 35px;
     content: '';
-    color: white;
-    background: white;
-    width: 1px;
+    color: gray;
+    background: #ec4e39;
+    width: 2px;
     left: 50%;
 }
 
@@ -38,7 +39,7 @@
 .child:nth-child(odd)::before{
     content: '';
     position: absolute;
-    background: white;
+    background: #ec4e39;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -48,7 +49,7 @@
 .child:nth-child(odd)::after{
     content: '';
     position: absolute;
-    background: white;
+    background: #ec4e39;
     width: 10px;
     height: 2px;
     left: -10px;
@@ -69,7 +70,7 @@
 .child:nth-child(even)::before{
     content: '';
     position: absolute;
-    background: white;
+    background: #ec4e39;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -79,7 +80,7 @@
 .child:nth-child(even)::after{
     content: '';
     position: absolute;
-    background: white;
+    background: gray;
     border-radius: 50%;
     width: 10px;
     height: 2px;
@@ -90,7 +91,7 @@
 .content {
     width: 180px;
     padding: 15px;
-    color: white;
+    color: gray;
 }
 
 
