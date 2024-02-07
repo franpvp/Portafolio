@@ -69,24 +69,6 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        {/* SQL */}
-        <div
-          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
-        >
-          <div className={`text-center pt-4 ${styles.skillsList}`}>
-            <div className={`${styles.content}`}>
-              <img
-                src="/images/sql.png"
-                alt="java"
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                  borderRadius: "50%",
-                }}
-              />
-            </div>
-          </div>
-        </div>
 
         {/* HTML CSS */}
         <div
@@ -108,7 +90,7 @@ const Skills = () => {
         </div>
         {/* React */}
         <div
-          className={`col-xs-12 col-sm-6 col-md-6 col-lg-4`}
+          className={`col-xs-12 col-sm-6 col-md-6 col-lg-6`}
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
@@ -124,9 +106,9 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        {/* NodeJS ExpressJS */}
+        {/* MySQL */}
         <div
-          className={`col-xs-12 col-sm-12 col-md-6 col-lg-4`}
+          className={`col-xs-12 col-sm-12 col-md-12 col-lg-6`}
         >
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>

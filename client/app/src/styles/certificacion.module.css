@@ -1,9 +1,16 @@
 .contenedorCert{
+    font-family: 'Roboto', sans-serif !important;
     display: flex;
+    padding: 60px !important;
     align-items: center;
     justify-content: center;
-    background-color: #282c34;
-    color: white;
-    font-size: 35px;
+    background-color: white;
+
+}
+
+.certTitle{
+    font-size: 40px !important;
+    padding-bottom: 60px;
+    color: gray;
 }
 

@@ -1,16 +1,16 @@
 .proyectosContainer{
-    padding-top: 20px;
+    padding: 50px !important;
     background-color: #282c34;
     color: white;
 }
 
 .titleProyectos{
+    font-family: 'Roboto', sans-serif;
     color: white;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 

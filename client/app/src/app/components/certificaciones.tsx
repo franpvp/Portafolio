@@ -12,7 +12,7 @@ const Certificacion: React.FC = () => {
     return (
         <div id="certificacion" className={`container-fluid pt-5 ${styles.contenedorCert}`}>
             <div className="row" >
-            <h2 className={`text-center pt-5 pb-5`}>Certificaciones</h2>
+            <h2 className={`text-center ${styles.certTitle}`}>Certificaciones</h2>
                 {/* EnglishScore */}
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 pb-5 text-center">
                     <img

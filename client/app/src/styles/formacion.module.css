@@ -1,14 +1,13 @@
 .contenedorFormacion{
     margin: 0 !important;
     background-color: white;
-    padding: 60px;
+    padding: 80px !important;
 }
 
 .titleFormacion{
     font-family: 'Roboto', sans-serif;
     color: gray;
     font-size: 50px;
-    padding: 40px;
 }
 
 .timeline{
