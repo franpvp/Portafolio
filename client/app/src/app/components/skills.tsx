@@ -29,7 +29,7 @@ const Skills = () => {
     <div id="skills" className={`container-fluid ${styles.selectorSkillsContainer}`}>
       <div className="row">
         <br />
-        <h2 className={`${styles.titleSkills} pb-5`}>
+        <h2 className={`${styles.titleSkills}`}>
           Skills
         </h2>
         {/* Java */}

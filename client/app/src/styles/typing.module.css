@@ -2,15 +2,16 @@
 
 .codeContainer {
     font-family: 'Courier New', monospace;
-    background-color: #f4f4f4;
+    background-color: transparent;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
   }
   
   .codeText {
-    color: #333;
+    font-size: 30px;
+    color: #ec4e39;
+    font-weight: bold;
   }
   
   .cursor {

@@ -24,7 +24,7 @@ const Formacion: React.FC = () => {
     return (
         <div id="formacion" className={`container-fluid pt-3 ${styles.contenedorFormacion}`}>
             <div className="row">
-                <h2 className={`text-center pt-5 pb-5 ${styles.titleFormacion}`}>Formación</h2>
+                <h2 className={`text-center ${styles.titleFormacion}`}>Formación</h2>
                 <div className={`col-xs-12 col-md-12 col-lg-12 p-4 d-flex align-items-center justify-content-center`}>
                     <div className={styles.timeline}>
                         {listaEducacion.map((educacion, index) => (

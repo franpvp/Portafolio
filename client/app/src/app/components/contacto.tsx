@@ -53,7 +53,7 @@ const Contacto: React.FC = () => {
               {/* Input de Correo Electrónico */}
                 <div className="mb-3">
                     <div className="form-floating mb-3">
-                        <input type="email" className="form-control" id="email" name="email" placeholder="name@example.com"/>
+                        <input type="email" className="form-control" id="email" name="email" placeholder="name@example.com" required/>
                         <label htmlFor="email" style={{ color: 'gray' }}>Correo electrónico:</label>
                     </div>
                 </div>
