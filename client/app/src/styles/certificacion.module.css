@@ -2,8 +2,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #282c34;
+    background-color: white;
     color: white;
     font-size: 35px;
+    padding: 40px !important;
+}
+
+.titleCert{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: gray;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -1,7 +1,7 @@
 .contenedorFormacion{
     margin: 0 !important;
     background-color: white;
-    padding: 60px;
+    padding: 60px !important;
 }
 
 .titleFormacion{

@@ -78,8 +78,6 @@ const Home: React.FC = () => {
       window.removeEventListener('scroll', handleScroll);
       };
     }
-
-   
   }, []); 
 
   return (

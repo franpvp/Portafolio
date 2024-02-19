@@ -33,6 +33,21 @@ function Cursor() {
   // Adjust the cursor position to create a visual effect when over a clickable element.
   const cursorStyle = isPointer ? { left: "-100px", top: "-100px" } : {};
 
+  const handlePageTopClick = () => {
+    // Delay the scroll by 2 seconds
+    setTimeout(() => {
+      // Smooth scroll to the top of the page
+      const scrollToTop = () => {
+        const currentPosition = window.pageYOffset;
+        if (currentPosition > 0) {
+          window.scrollTo(0, currentPosition - 50);
+          setTimeout(scrollToTop, 10);
+        }
+      };
+      scrollToTop();
+    }, 4000);
+  };
+
   // Render the custom cursor element with dynamic styles based on cursor state.
   return (
     <div
@@ -44,9 +59,9 @@ function Cursor() {
         width: `${flareSize}px`,
         height: `${flareSize}px`,
       }}
+      onClick={handlePageTopClick} // Add onClick event handler
     ></div>
   );
 }
 
-// Export the FlareCursor component to be used in other parts of the application.
 export default Cursor;
