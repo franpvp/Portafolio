@@ -48,7 +48,7 @@ const Contacto: React.FC = () => {
     <div id="contacto" className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}>
       <div className="row">
         <h2 className={`text-center p-2 ${styles.tituloContacto}`}>Contacto</h2>
-        <div className="col-sm-10 col-md-8 col-lg-6 p-4 mx-auto">
+        <div className="col-xs-12 col-sm-12 col-md-8 col-lg-6 p-4 mx-auto">
             <form method="post" action="#" onSubmit={enviarCorreo}>
               {/* Input de Correo Electrónico */}
                 <div className="mb-3">
@@ -59,10 +59,18 @@ const Contacto: React.FC = () => {
                 </div>
                 {/* Input de Mensaje */}
                 <div className="mb-3">
-                    <div className="form-floating">
-                        <textarea className="form-control" placeholder="Leave a comment here" id="mensaje" name="mensaje" required></textarea>
-                        <label htmlFor="mensaje" style={{ color: 'gray' }}>Mensaje:</label>
-                    </div>
+                  <div className="form-floating">
+                      <textarea 
+                          className="form-control" 
+                          placeholder="Leave a comment here" 
+                          id="mensaje" 
+                          name="mensaje" 
+                          required
+                          maxLength={100} // Define el máximo número de caracteres permitidos
+                          style={{ resize: 'none' }} // Evita que el usuario pueda cambiar el tamaño
+                      ></textarea>
+                      <label htmlFor="mensaje" style={{ color: 'gray' }}>Mensaje:</label>
+                  </div>
                 </div>
                 {/* Boton Contacto */}
                 <div className="row">
