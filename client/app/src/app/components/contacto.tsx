@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/contacto.module.css";
 import { color } from "framer-motion";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { error } from "console";
 
 type Contacto = {
@@ -12,6 +9,8 @@ type Contacto = {
 };
 
 const Contacto: React.FC = () => {
+  const [enviado, setEnviado] = useState(false); // Estado para controlar si el correo ha sido enviado
+
   const enviarCorreo = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("Enviando correo.....");
@@ -31,18 +30,16 @@ const Contacto: React.FC = () => {
         },
         body: JSON.stringify({ email: email, mensaje: mensaje }),
       });
-      if (!response.ok) {
+
+      if (response.ok) {
+        setEnviado(true); // Establece el estado enviado a verdadero cuando se envía correctamente
+      } else {
         throw new Error("Error enviando información");
       }
-      const data = await response.json();
     } catch (error) {
       console.log("Error enviando información");
     }
   };
-
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <div id="contacto" className={`container-fluid pt-4 pb-4 ${styles.contenedorContacto}`}>
@@ -73,18 +70,23 @@ const Contacto: React.FC = () => {
                   </div>
                 </div>
                 {/* Boton Contacto */}
-                <div className="row">
+                <div className="row pb-3">
                   <div className="col d-flex justify-content-center pb-3"></div>
                   <div className="d-flex justify-content-center">
                     {/* Cambia el div por un botón */}
                     <button type="submit" className={`${styles.btnContacto}`}>Enviar</button>
                   </div>
                 </div>
+                {/* Alerta de envío exitoso */}
+                {enviado && (
+                  <div className="alert alert-success text-center" role="alert">
+                    Mensaje Enviado
+                  </div>
+                )}
             </form>
         </div>
       </div>
     </div>
-
   );
 };
 
