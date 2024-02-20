@@ -34,6 +34,13 @@ const Navbar: React.FC = () => {
         setMenuOpen(false);
     };
 
+    const smoothScrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg p-3">
