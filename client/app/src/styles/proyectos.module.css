@@ -1,5 +1,5 @@
 .proyectosContainer{
-    padding-top: 20px;
+    padding: 50px !important;
     background-color: #282c34;
     color: white;
     padding: 40px !important;
@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .fixed-size-image {
     max-width: 400px;

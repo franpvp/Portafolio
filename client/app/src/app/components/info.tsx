@@ -28,7 +28,6 @@ const Info: React.FC = () => {
     "Bienvenido a mi Portafolio!",
   ];
   
-
   return (
     <div id="about" style={{ width: '100%' }} className={`container-fluid pt-3 ${styles.contenedorInfo}`}>
       <div className="row">

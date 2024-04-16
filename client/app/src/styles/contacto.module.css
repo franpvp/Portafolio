@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}    
 
 .btnContacto {
     display: flex;
@@ -23,8 +23,8 @@
     cursor: pointer;
     width: 300px;
     height: 40px;
-    color: white;
-    border: 1px solid white;
+    color: #ec4e39;
+    border: 1px solid #ec4e39;
     border-radius: 30px;
     transition: all 0.5s ease-in-out;
 }

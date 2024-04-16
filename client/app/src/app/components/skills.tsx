@@ -106,10 +106,8 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        {/*  MySQL */}
-        <div
-          className={`col-xs-12 col-sm-12 col-md-12 col-lg-6`}
-        >
+        {/* MySQL */}
+        <div className={`col-xs-12 col-sm-12 col-md-12 col-lg-6`}>
           <div className={`text-center pt-4 ${styles.skillsList}`}>
             <div className={`${styles.content}`}>
               <img

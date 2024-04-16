@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/contacto.module.css";
-import { color } from "framer-motion";
 import { error } from "console";
 
 type Contacto = {
@@ -23,7 +22,7 @@ const Contacto: React.FC = () => {
       console.log(email);
       console.log(mensaje);
 
-      const response = await fetch("http://localhost:3001/api/enviar-correo", {
+      const response = await fetch("http://ec2-50-17-176-47.compute-1.amazonaws.com:3001/api/enviar-correo", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
