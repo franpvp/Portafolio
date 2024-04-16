@@ -62,7 +62,7 @@ const Proyectos: React.FC = () => {
                         <div className="card text-bg-secondary mb-3 p-3">
                             <img className={`card-img-top`} src="/images/clinicaPage.png" alt="img-clinica"/>
                             <div className="card-body">
-                                <h5 className="card-title text-center">Página Clínica</h5>
+                                <h5 className="card-title text-center">Sitio Web Clínica</h5>
                                 <p className="card-text">
                                     Sistema especializado en el ámbito de la medicina que facilita la programación 
                                     de citas médicas y además de proporcionar información sobre medicamentos a través de 

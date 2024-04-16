@@ -3,7 +3,6 @@ import styles from "@/styles/info.module.css";
 
 import TypingSimulator from "./typingSimulator";
 import Image from 'next/image';
-import { motion } from "framer-motion";
 
 // Imagenes
 import imgGithub from '../../../public/images/github.png';

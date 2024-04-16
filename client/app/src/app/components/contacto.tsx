@@ -46,7 +46,7 @@ const Contacto: React.FC = () => {
       <div className="row">
         <h2 className={`text-center p-2 ${styles.tituloContacto}`}>Contacto</h2>
         <div className="col-xs-12 col-sm-12 col-md-8 col-lg-6 p-4 mx-auto">
-            <form method="post" action="#" onSubmit={enviarCorreo}>
+            <form method="post" onSubmit={enviarCorreo}>
               {/* Input de Correo Electrónico */}
                 <div className="mb-3">
                     <div className="form-floating mb-3">
